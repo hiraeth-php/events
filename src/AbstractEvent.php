@@ -2,10 +2,12 @@
 
 namespace Hiraeth\Events;
 
+use League\Event;
+
 /**
  *
  */
-abstract class AbstractEvent implements EventInterface
+abstract class AbstractEvent extends Event\AbstractEvent
 {
 	/**
 	 *

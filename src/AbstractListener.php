@@ -2,10 +2,12 @@
 
 namespace Hiraeth\Events;
 
+use League\Event;
+
 /**
  *
  */
-abstract class AbstractListener implements ListenerInterface
+abstract class AbstractListener extends Event\AbstractListener
 {
 	/**
 	 *
@@ -13,14 +15,5 @@ abstract class AbstractListener implements ListenerInterface
 	public function __invoke(EventInterface $event)
 	{
 		return $this->handle(...func_get_args());
-	}
-
-
-	/**
-	 *
-	 */
-	public function isListener($listener)
-	{
-		return $listener === $this;
 	}
 }
