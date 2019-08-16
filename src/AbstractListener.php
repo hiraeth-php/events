@@ -10,7 +10,10 @@ abstract class AbstractListener implements ListenerInterface
 	/**
 	 *
 	 */
-	abstract public function __invoke(EventInterface $event);
+	public function __invoke(EventInterface $event)
+	{
+		return $this->handle(...func_get_args());
+	}
 
 
 	/**

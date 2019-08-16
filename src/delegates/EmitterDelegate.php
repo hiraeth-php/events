@@ -51,7 +51,7 @@ class EmitterDelegate implements Hiraeth\Delegate
 			$listener_signal = $signal->create($config['class']);
 
 			foreach ($config['events'] as $event) {
-				$emmitter->addListener($event, $listener_signal);
+				$emitter->addListener($event, $listener_signal);
 			}
 		}
 

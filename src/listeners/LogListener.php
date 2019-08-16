@@ -2,6 +2,7 @@
 
 namespace Hiraeth\Events;
 
+use Hiraeth;
 use Hiraeth\Events\EventInterface as Event;
 
 /**
@@ -26,7 +27,7 @@ class LogListener extends AbstractListener
 	/**
 	 *
 	 */
-	public function __invoke(Event $event)
+	public function handle(Event $event)
 	{
 		$this->app->info(sprintf('The "%s" event has been emitted', $event->getName()));
 	}
