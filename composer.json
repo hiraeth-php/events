@@ -13,7 +13,7 @@
     "require": {
         "hiraeth/app": "^2.0",
         "league/event": "^2.2",
-        "hiraeth/signal": "^1.2"
+        "hiraeth/signal": "^2.0"
     },
     "autoload": {
         "classmap": ["src/"]
