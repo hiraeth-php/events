@@ -2,17 +2,17 @@
 
 namespace Hiraeth\Events;
 
-use League\Event;
+use League;
 
 /**
  *
  */
-abstract class AbstractListener extends Event\AbstractListener
+abstract class AbstractListener extends League\Event\AbstractListener
 {
 	/**
 	 *
 	 */
-	public function __invoke(EventInterface $event)
+	public function __invoke(Event $event)
 	{
 		return $this->handle(...func_get_args());
 	}
