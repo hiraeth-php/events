@@ -3,7 +3,6 @@
 namespace Hiraeth\Events;
 
 use Hiraeth;
-use Hiraeth\Events\EventInterface as Event;
 
 /**
  *
