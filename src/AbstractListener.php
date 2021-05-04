@@ -7,7 +7,7 @@ use League;
 /**
  *
  */
-abstract class AbstractListener extends League\Event\AbstractListener
+abstract class AbstractListener extends League\Event\AbstractListener implements Listener
 {
 	/**
 	 *
