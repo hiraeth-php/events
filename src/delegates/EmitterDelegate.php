@@ -3,7 +3,6 @@
 namespace Hiraeth\Events;
 
 use Hiraeth;
-use League\Event\Emitter;
 
 /**
  *
@@ -51,7 +50,7 @@ class EmitterDelegate implements Hiraeth\Delegate
 			$listener_signal = $signal->create($config['class']);
 
 			foreach ($config['events'] as $event) {
-				$emitter->addListener($event, $listener_signal);
+				$emitter->addListener(strtolower($event), $listener_signal);
 			}
 		}
 

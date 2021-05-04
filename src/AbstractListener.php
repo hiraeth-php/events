@@ -3,6 +3,7 @@
 namespace Hiraeth\Events;
 
 use League;
+use RuntimeException;
 
 /**
  *
@@ -12,8 +13,8 @@ abstract class AbstractListener extends League\Event\AbstractListener implements
 	/**
 	 *
 	 */
-	public function __invoke(Event $event)
+	public function handle(League\Event\EventInterface $event)
 	{
-		return $this->handle(...func_get_args());
+		throw new RuntimeException('This event does not support legacy calling, use __invoke');
 	}
 }

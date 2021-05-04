@@ -7,7 +7,7 @@
 	;
 
 	aliases = {
-		"Hiraeth\Events\Emitter": "League\Event\Emitter"
+
 	}
 
 	;
