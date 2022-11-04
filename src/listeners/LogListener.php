@@ -10,9 +10,9 @@ use Hiraeth;
 class LogListener extends AbstractListener
 {
 	/**
-	 *
+	 * @var Hiraeth\Application
 	 */
-	protected $app = NULL;
+	protected $app;
 
 
 	/**
@@ -24,7 +24,7 @@ class LogListener extends AbstractListener
 	}
 
 	/**
-	 *
+	 * {@inheritDoc}
 	 */
 	public function __invoke(Event $event)
 	{
