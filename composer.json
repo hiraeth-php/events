@@ -16,7 +16,7 @@
         ]
     },
     "require": {
-        "hiraeth/app": "^2.0",
+        "hiraeth/app": "^3.0",
         "league/event": "^2.2",
         "hiraeth/signal": "^2.0"
     },
