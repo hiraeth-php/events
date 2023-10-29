@@ -18,10 +18,11 @@
     "require": {
         "hiraeth/app": "^3.0",
         "league/event": "^2.2",
-        "hiraeth/signal": "^2.0"
+        "hiraeth/signal": "^3.0"
     },
     "require-dev": {
-        "phpstan/phpstan": "^1.0"
+        "phpstan/phpstan": "^1.0",
+	"phpunit/phpunit": "^10.0"
     },
     "type": "opus-package",
     "extra": {
