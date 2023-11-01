@@ -2,18 +2,18 @@
 
 namespace Hiraeth\Events;
 
-use League\Event\ListenerInterface;
+use League\Event;
 
 /**
  *
  */
-interface Listener extends ListenerInterface
+interface Listener extends Event\Listener
 {
 	/**
 	 * Invoke the listener with an event
 	 *
-	 * @param Event $event
+	 * @param object $event
 	 * @return void
 	 */
-	public function __invoke(Event $event);
+	public function __invoke(object $event): void;
 }

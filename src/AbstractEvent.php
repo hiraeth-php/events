@@ -2,17 +2,15 @@
 
 namespace Hiraeth\Events;
 
-use League;
-
 /**
  *
  */
-abstract class AbstractEvent extends League\Event\AbstractEvent implements Event
+abstract class AbstractEvent implements Event
 {
 	/**
-	 *
+	 * {@inheritDoc}
 	 */
-	public function getName()
+	public function getName(): string
 	{
 		return implode('.', array_map('strtolower', explode('\\', get_called_class())));
 	}

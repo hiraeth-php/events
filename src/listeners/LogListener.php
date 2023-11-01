@@ -26,8 +26,8 @@ class LogListener extends AbstractListener
 	/**
 	 * {@inheritDoc}
 	 */
-	public function __invoke(Event $event)
+	public function __invoke(object $event): void
 	{
-		$this->app->info(sprintf('The "%s" event has been emitted', $event->getName()));
+		$this->app->info(sprintf('The "%s" event has been emitted', get_class($event)));
 	}
 }

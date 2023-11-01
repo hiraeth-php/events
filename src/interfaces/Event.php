@@ -2,12 +2,12 @@
 
 namespace Hiraeth\Events;
 
-use League\Event\EventInterface;
+use League\Event\HasEventName;
 
 /**
  *
  */
-interface Event extends EventInterface
+interface Event extends HasEventName
 {
 
 }

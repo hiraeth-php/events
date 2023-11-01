@@ -7,7 +7,7 @@ use League;
 /**
  *
  */
-class Emitter extends League\Event\Emitter
+class Emitter extends League\Event\EventDispatcher
 {
 
 }
